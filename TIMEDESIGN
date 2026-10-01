@@ -1,0 +1,1169 @@
+index.html
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TimeDesign | Mobileri</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f6f3ef;
+    color:#171717;
+}
+
+/* HEADER */
+
+header{
+    height:75px;
+    padding:0 7%;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid #eee;
+}
+
+.logo{
+    font-size:27px;
+    font-weight:bold;
+}
+
+.logo span{
+    font-weight:normal;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-size:14px;
+}
+
+.login  <!DOCTYPE html>
+<html lang="sq">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>TimeDesign | Login</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial,sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #eee4d8,
+        #cdb79f
+    );
+
+}
+
+.login-box{
+
+    width:420px;
+
+    max-width:92%;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:10px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    text-align:center;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    margin-bottom:10px;
+
+}
+
+.logo span{
+
+    font-weight:normal;
+
+}
+
+.title{
+
+    text-align:center;
+
+    color:#777;
+
+    margin-bottom:30px;
+
+}
+
+.tabs{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+.tabs button{
+
+    flex:1;
+
+    padding:13px;
+
+    border:1px solid #ddd;
+
+    background:#f5f5f5;
+
+    cursor:pointer;
+
+    border-radius:5px;
+
+    font-weight:bold;
+
+}
+
+.tabs button.active{
+
+    background:#171717;
+
+    color:white;
+
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:5px;
+
+    font-size:14px;
+
+    outline:none;
+
+}
+
+input:focus{
+
+    border-color:#987452;
+
+}
+
+.login-button{
+
+    border:0;
+
+    padding:14px;
+
+    background:#171717;
+
+    color:white;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+}
+
+.login-button:hover{
+
+    background:#987452;
+
+}
+
+.back{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    color:#777;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+}
+
+.message{
+
+    text-align:center;
+
+    margin-top:15px;
+
+    color:#b33;
+
+    font-size:14px;
+
+}
+
+.demo{
+
+    margin-top:20px;
+
+    padding:12px;
+
+    background:#f5f2ee;
+
+    border-radius:5px;
+
+    font-size:12px;
+
+    color:#666;
+
+    text-align:center;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="login-box">
+
+
+    <div class="logo">
+
+        Time<span>Design</span>
+
+    </div>
+
+
+    <p class="title">
+
+        Hyr në llogarinë tënde
+
+    </p>
+
+
+    <!-- TABS -->
+
+    <div class="tabs">
+
+        <button
+        id="clientTab"
+        class="active"
+        onclick="showClient()">
+
+            Klient
+
+        </button>
+
+
+        <button
+        id="adminTab"
+        onclick="showAdmin()">
+
+            Admin
+
+        </button>
+
+    </div>
+
+
+    <!-- CLIENT LOGIN -->
+
+    <form
+    id="clientForm"
+    onsubmit="clientLogin(event)">
+
+
+        <input
+        id="clientEmail"
+        type="email"
+        placeholder="Email"
+        required>
+
+
+        <input
+        id="clientPassword"
+        type="password"
+        placeholder="Fjalëkalimi"
+        required>
+
+
+        <button
+        class="login-button"
+        type="submit">
+
+            Hyr si Klient
+
+        </button>
+
+
+    </form>
+
+
+    <!-- ADMIN LOGIN -->
+
+    <form
+    id="adminForm"
+    class="hidden"
+    onsubmit="adminLogin(event)">
+
+
+        <input
+        id="adminUsername"
+        type="text"
+        placeholder="Përdoruesi"
+        required>
+
+
+        <input
+        id="adminPassword"
+        type="password"
+        placeholder="Fjalëkalimi"
+        required>
+
+
+        <button
+        class="login-button"
+        type="submit">
+
+            Hyr si Admin
+
+        </button>
+
+
+    </form>
+
+
+    <div
+    id="message"
+    class="message">
+    </div>
+
+
+    <div class="demo">
+
+        <b>Demo Admin</b><br><br>
+
+        Përdoruesi:
+        <b>admin</b>
+
+        <br>
+
+        Fjalëkalimi:
+        <b>admin123</b>
+
+    </div>
+
+
+    <a
+    href="index.html"
+    class="back">
+
+        ← Kthehu në Ballinë
+
+    </a>
+
+
+</div>
+
+
+<script>
+
+
+/* SHFAQ LOGIN KLIENT */
+
+function showClient(){
+
+    document
+    .getElementById("clientForm")
+    .classList
+    .remove("hidden");
+
+
+    document
+    .getElementById("adminForm")
+    .classList
+    .add("hidden");
+
+
+    document
+    .getElementById("clientTab")
+    .classList
+    .add("active");
+
+
+    document
+    .getElementById("adminTab")
+    .classList
+    .remove("active");
+
+
+    document
+    .getElementById("message")
+    .innerHTML="";
+
+}
+
+
+/* SHFAQ LOGIN ADMIN */
+
+function showAdmin(){
+
+    document
+    .getElementById("clientForm")
+    .classList
+    .add("hidden");
+
+
+    document
+    .getElementById("adminForm")
+    .classList
+    .remove("hidden");
+
+
+    document
+    .getElementById("clientTab")
+    .classList
+    .remove("active");
+
+
+    document
+    .getElementById("adminTab")
+    .classList
+    .add("active");
+
+
+    document
+    .getElementById("message")
+    .innerHTML="";
+
+}
+
+
+/* LOGIN KLIENT */
+
+function clientLogin(event){
+
+    event.preventDefault();
+
+
+    localStorage.setItem(
+        "TimeDesignClient",
+        "true"
+    );
+
+
+    window.location.href =
+        "klient.html";
+
+}
+
+
+/* LOGIN ADMIN */
+
+function adminLogin(event){
+
+    event.preventDefault();
+
+
+    const username =
+        document
+        .getElementById("adminUsername")
+        .value;
+
+
+    const password =
+        document
+        .getElementById("adminPassword")
+        .value;
+
+
+    if(
+        username === "admin"
+        &&
+        password === "admin123"
+    ){
+
+        localStorage.setItem(
+            "TimeDesignAdmin",
+            "true"
+        );
+
+
+        window.location.href =
+            "admin.html";
+
+    }
+
+    else{
+
+        document
+        .getElementById("message")
+        .innerHTML =
+        "❌ Përdoruesi ose fjalëkalimi është gabim.";
+
+    }
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
+    
+
+/* HERO */
+
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    padding:100px 8%;
+
+    background:
+    linear-gradient(
+        90deg,
+        #eee4d8,
+        #d1bda8
+    );
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.subtitle{
+    color:#987452;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:65px;
+    line-height:1.05;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    font-weight:normal;
+}
+
+.hero p{
+    color:#555;
+    line-height:1.7;
+    max-width:530px;
+    margin-bottom:30px;
+}
+
+.button{
+    display:inline-block;
+    background:#171717;
+    color:white;
+    padding:15px 25px;
+    border-radius:5px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#987452;
+}
+
+/* SECTIONS */
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:42px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    overflow:hidden;
+    box-shadow:0 5px 20px #0000000d;
+}
+
+.card-image{
+    height:300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-weight:bold;
+    letter-spacing:3px;
+    font-size:14px;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#777;
+    line-height:1.6;
+}
+
+/* KUZHINA */
+
+.kitchen1{
+    background:linear-gradient(135deg,#665446,#d0b89c);
+}
+
+.kitchen2{
+    background:linear-gradient(135deg,#252525,#aaa);
+}
+
+.kitchen3{
+    background:linear-gradient(135deg,#9a7653,#e2cfb8);
+}
+
+/* DHOMA GJUMI */
+
+.dark{
+    background:#202020;
+    color:white;
+}
+
+.dark .card{
+    color:#171717;
+}
+
+.bedroom1{
+    background:linear-gradient(135deg,#443a34,#c5ad96);
+}
+
+.bedroom2{
+    background:linear-gradient(135deg,#292929,#9e8872);
+}
+
+/* DHOMA DITE */
+
+.living1{
+    background:linear-gradient(135deg,#665c54,#d4c3b3);
+}
+
+.living2{
+    background:linear-gradient(135deg,#373737,#b69a7b);
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+    background:#e8ddd0;
+}
+
+.contact h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.contact p{
+    max-width:600px;
+    margin:0 auto 30px;
+    color:#666;
+    line-height:1.7;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:#aaa;
+    text-align:center;
+    padding:30px;
+}
+
+footer .logo{
+    color:white;
+    margin-bottom:10px;
+}
+
+footer p{
+    font-size:13px;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    header{
+        padding:0 5%;
+    }
+
+    nav{
+        gap:10px;
+    }
+
+    nav a:not(.login){
+        display:none;
+    }
+
+    .hero{
+        min-height:550px;
+        padding:70px 6%;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    section{
+        padding:60px 6%;
+    }
+
+    .section-title h2{
+        font-size:35px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .card-image{
+        height:250px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+        Time<span>Design</span>
+    </div>
+
+    <nav>
+
+        <a href="#ballina">Ballina</a>
+
+        <a href="#kuzhina">
+            Kuzhina
+        </a>
+
+        <a href="#gjumi">
+            Dhoma gjumi
+        </a>
+
+        <a href="#dite">
+            Dhoma dite
+        </a>
+
+        <a href="#kontakt">
+            Kontakt
+        </a>
+
+        <a href="login.html" class="login">
+            Hyr
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- BALLINA -->
+
+<section class="hero" id="ballina">
+
+    <div class="hero-content">
+
+        <div class="subtitle">
+            MOBILERI • DIZAJN • CILËSI
+        </div>
+
+        <h1>
+            Mobilje që i japin
+            <span>jetë shtëpisë.</span>
+        </h1>
+
+        <p>
+            Kuzhina, dhoma gjumi dhe dhoma dite
+            të punuara me kujdes dhe sipas dëshirës
+            suaj.
+        </p>
+
+        <a href="#kuzhina" class="button">
+            Shiko koleksionin
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- KUZHINA -->
+
+<section id="kuzhina">
+
+    <div class="section-title">
+
+        <div class="subtitle">
+            KOLEKSIONI
+        </div>
+
+        <h2>
+            Kuzhina
+        </h2>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="card-image kitchen1">
+                KUZHINË MODERNE
+            </div>
+
+            <div class="card-content">
+
+                <h3>
+                    Kuzhinë Moderne
+                </h3>
+
+                <p>
+                    Dizajn minimalist dhe hapësirë
+                    praktike për shtëpinë tuaj.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-image kitchen2">
+                KUZHINË PREMIUM
+            </div>
+
+            <div class="card-content">
+
+                <h3>
+                    Kuzhinë Premium
+                </h3>
+
+                <p>
+                    Materiale cilësore dhe përfundim
+                    elegant.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-image kitchen3">
+                KUZHINË KLASIKE
+            </div>
+
+            <div class="card-content">
+
+                <h3>
+                    Kuzhinë Klasike
+                </h3>
+
+                <p>
+                    Stil klasik i kombinuar me
+                    funksionalitet modern.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- DHOMA GJUMI -->
+
+<section id="gjumi" class="dark">
+
+    <div class="section-title">
+
+        <div class="subtitle">
+            KOLEKSIONI
+        </div>
+
+        <h2>
+            Dhoma gjumi
+        </h2>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="card-image bedroom1">
+                DHOMË GJUMI
+            </div>
+
+            <div class="card-content">
+
+                <h3>
+                    Bedroom Elegance
+                </h3>
+
+                <p>
+                    Qetësi, rehati dhe dizajn elegant
+                    për dhomën tuaj.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-image bedroom2">
+                SET GJUMI
+            </div>
+
+            <div class="card-content">
+
+                <h3>
+                    Set Modern
+                </h3>
+
+                <p>
+                    Krevat, komodë dhe garderobë
+                    në një stil modern.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- DHOMA DITE -->
+
+<section id="dite">
+
+    <div class="section-title">
+
+        <div class="subtitle">
+            KOLEKSIONI
+        </div>
+
+        <h2>
+            Dhoma dite
+        </h2>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="card-image living1">
+                DHOMË DITE
+            </div>
+
+            <div class="card-content">
+
+                <h3>
+                    Living Modern
+                </h3>
+
+                <p>
+                    Mobilim bashkëkohor për ambientin
+                    tuaj.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-image living2">
+                LIVING PREMIUM
+            </div>
+
+            <div class="card-content">
+
+                <h3>
+                    Living Premium
+                </h3>
+
+                <p>
+                    Detaje elegante dhe zgjidhje
+                    funksionale.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- KONTAKT -->
+
+<section class="contact" id="kontakt">
+
+    <div class="subtitle">
+        TIME DESIGN
+    </div>
+
+    <h2>
+        Ke një projekt në mendje?
+    </h2>
+
+    <p>
+        Na kontaktoni dhe na tregoni se çfarë
+        mobilimi dëshironi për shtëpinë tuaj.
+    </p>
+
+    <a
+        href="mailto:info@timedesign.com"
+        class="button"
+    >
+        Kërko ofertë
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="logo">
+        Time<span>Design</span>
+    </div>
+
+    <p>
+        © 2026 TimeDesign.
+        Të gjitha të drejtat e rezervuara.
+    </p>
+
+</footer>
+
+
+</body>
+</html></index>
